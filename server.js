@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3001;
 
 // Creating Session
 const sess = {
-  secret: "victoria secret",
+  secret: "It's a secret",
 
   // cookie
   cookie: {
@@ -45,6 +45,6 @@ app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {
-    console.log(`Now listening on http://localhost:${PORT} 🚀`);
+    console.log(`Now listening on http://localhost:${PORT} `);
   });
 });
